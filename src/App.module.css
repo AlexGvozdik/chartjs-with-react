@@ -1,0 +1,118 @@
+.mainInputWrapper {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.firstInputWrapper {
+  margin-bottom: 8px;
+}
+
+.label {
+  display: flex;
+  flex-direction: column;
+}
+.label span {
+  margin-bottom: 3px;
+  color: red;
+  font-weight: 700;
+}
+.label:focus-within .labelSpan {
+  color: rgb(12, 12, 188);
+}
+
+.label input {
+  height: 30px;
+  font-size: 16px;
+  border: 4px solid rgb(12, 12, 188);
+  border-radius: 4px;
+  opacity: 0.6;
+  padding-left: 4px;
+  padding-right: 4px;
+}
+
+.chartWrapper {
+  width: 300px;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 5px;
+}
+
+@media screen and (min-width: 450px) {
+  .chartWrapper {
+    width: 400px;
+    height: 400px;
+  }
+}
+@media screen and (min-width: 600px) {
+  .chartWrapper {
+    width: 600px;
+    height: 400px;
+  }
+}
+
+.loaderContainer {
+  width: 100%;
+  height: 100%;
+}
+
+.chartWrapper h1 {
+  color: rgb(12, 12, 188);
+  text-align: center;
+  font-size: 19px;
+  padding: 20px;
+  transition: all 500ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+@media screen and (min-width: 500px) {
+  .chartWrapper h1 {
+    font-size: 30px;
+  }
+}
+.chartWrapper h1:hover,
+.chartWrapper h1:focus {
+  color: red;
+  transform: scale(1.3);
+}
+
+.loaderDiv {
+  width: 100%;
+  height: 300px;
+}
+
+.radioWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.labelRadio:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.spanRadio {
+  margin-left: 10px;
+  font-size: 19px;
+}
+
+@media screen and (min-width: 768px) {
+  .radioWrapper {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  .labelRadio:not(:last-child) {
+    margin-bottom: 0px;
+    margin-right: 20px;
+  }
+  .spanRadio {
+    margin-left: 5px;
+  }
+}
+
+.bar {
+  width: 100%;
+}
+
+.line {
+  width: 100%;
+}

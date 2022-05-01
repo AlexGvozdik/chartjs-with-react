@@ -1,0 +1,10 @@
+.pieChart {
+  width: 100%;
+}
+
+@media screen and (min-width: 600px) {
+  .pieChart {
+    width: 400px;
+    height: 400px;
+  }
+}
